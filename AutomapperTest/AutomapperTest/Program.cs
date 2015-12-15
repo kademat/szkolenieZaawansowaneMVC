@@ -31,7 +31,7 @@ namespace AutomapperTest
 
             Mapper.AssertConfigurationIsValid();
 
-            var order = new Order()
+            var order = new MyOrder()
             {
                 Id = 10,
                 Cost = 15.3M,

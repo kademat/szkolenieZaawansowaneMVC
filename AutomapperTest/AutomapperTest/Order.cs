@@ -18,6 +18,10 @@ namespace AutomapperTest
         public OrderStatus Status { get; set; }
     }
 
+    class MyOrder : Order
+    {
+        public string Description { get; set; }
+    }
 
     enum OrderStatus
     {

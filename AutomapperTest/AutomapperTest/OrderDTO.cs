@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomapperTest
 {
-    public class OrderDTO
+    class OrderDTO
     {
         public int Id { get; set; }
 
@@ -14,8 +14,13 @@ namespace AutomapperTest
 
         public string Cost { get; set; }
 
-        //public string Cost2 { get; set; }
+        public string Cost2 { get; set; }
 
         public string Status { get; set; }
+    }
+
+    class MyOrderDTO : OrderDTO
+    {
+        public string Description { get; set; }
     }
 }
