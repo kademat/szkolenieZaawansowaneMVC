@@ -9,16 +9,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AppName.Web.Infrastructure;
 
 namespace <#= Namespace #>
 {
-    public class <#= ControllerName #> : Controller
-    {
-        //
-        // GET: <#= (!String.IsNullOrEmpty(AreaName)) ? ("/" + AreaName) : String.Empty #>/<#= ControllerRootName #>/
-        public ActionResult Index()
-        {
-            return View();
-        }
+	public class <#= ControllerName #> : BaseController
+	{
+		//
+		// GET: <#= (!String.IsNullOrEmpty(AreaName)) ? ("/" + AreaName) : String.Empty #>/<#= ControllerRootName #>/
+		public ActionResult Index()
+		{
+			return View();
+		}
 	}
 }

@@ -205,10 +205,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductCategoriesController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\BaseController.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -277,7 +279,6 @@
     <Content Include="CodeTemplates\MvcControllerWithContext\Controller.cs.t4" />
     <Content Include="CodeTemplates\MvcControllerWithActions\Controller.vb.t4" />
     <Content Include="CodeTemplates\MvcControllerWithActions\Controller.cs.t4" />
-    <Content Include="CodeTemplates\MvcControllerEmpty\Controller.vb.t4" />
     <Content Include="CodeTemplates\MvcControllerEmpty\Controller.cs.t4" />
     <Content Include="CodeTemplates\MvcArea\web.vb.t4" />
     <Content Include="CodeTemplates\MvcArea\web.cs.t4" />
@@ -348,7 +349,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Base\" />
     <Folder Include="Views\ProductCategories\" />
+    <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
