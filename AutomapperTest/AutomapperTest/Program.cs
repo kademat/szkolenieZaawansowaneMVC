@@ -17,9 +17,16 @@ namespace AutomapperTest
             Mapper.CreateMap<Order, OrderDTO>()
                 .ForMember(dest => dest.Cost,
                 opt => opt.MapFrom(src => string.Format("{0} zl", src.Cost)))
+                .ForMember(dest => dest.Status,
+                    opt => opt.ResolveUsing<EnumToStringResolver>()
+                    .FromMember(src => src.Status))
                 //.ForMember(dest => dest.Status,
                 //    opt => opt.MapFrom(src =>
                 //      src.Status.ToDisplayString()))
+                .IgnoreAllNonExisting();
+
+
+            Mapper.CreateMap<MyOrder, MyOrderDTO>()
                 .IgnoreAllNonExisting();
 
             Mapper.AssertConfigurationIsValid();
@@ -44,6 +51,14 @@ namespace AutomapperTest
             var value = (Enum)context.SourceValue;
 
             return value.ToDisplayString();
+        }
+    }
+
+    public class EnumToStringResolver : ValueResolver<Enum, string>
+    {
+        protected override string ResolveCore(Enum source)
+        {
+            return source.ToDisplayString();
         }
     }
 }
