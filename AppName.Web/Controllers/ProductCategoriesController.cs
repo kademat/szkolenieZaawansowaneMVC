@@ -26,7 +26,7 @@ namespace AppName.Web.Controllers
 
             if (result.Success == false)
             {
-                return Content("Blad");
+                return Content("Blad (test)");
             }
 
             var viewModel = new IndexViewModel();
