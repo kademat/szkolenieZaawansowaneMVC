@@ -23,7 +23,9 @@
             </div>
         </div>
 
-        @Html.Partial("Address", Model.Address)
+        @*@Html.Partial("Address", Model.Address)*@
+
+        @Html.EditorFor(model => model.Address)
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">

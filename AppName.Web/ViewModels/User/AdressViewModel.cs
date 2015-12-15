@@ -13,6 +13,6 @@ namespace AppName.Web.ViewModels.User
         }
         public string City { get; set; }
 
-        public AdressViewModel Adress { get; set; }
+        private AdressViewModel Adress { get; set; }
     }
 }

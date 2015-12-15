@@ -279,7 +279,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Users\Create.cshtml" />
-    <Content Include="Views\Users\Address.cshtml" />
+    <Content Include="Views\Users\EditorTemplates\AdressViewModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
