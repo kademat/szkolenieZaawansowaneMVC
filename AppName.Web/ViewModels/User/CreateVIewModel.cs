@@ -9,5 +9,7 @@ namespace AppName.Web.ViewModels.User
     {
         public string Name { get; set; }
 
+        public AdressViewModel Address { get; set; }
+
     }
 }
