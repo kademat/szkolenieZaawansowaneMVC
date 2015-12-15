@@ -11,12 +11,20 @@ namespace TestData
     {
         static void Main(string[] args)
         {
-            var users = Builder<User>.CreateListOfSize(10).Build();
+            //var users = Builder<User>.CreateListOfSize(10).Build();
 
-            foreach (var user in users)
+            //foreach (var user in users)
+            //{
+            //    Console.WriteLine("{0} {1}", user.Name, user.Email);
+            //}
+
+            var user = new User()
             {
-                Console.WriteLine("{0} {1}", user.Name, user.Email);
-            }
+                Name = Faker.NameFaker.FirstName(),
+                Email = Faker.InternetFaker.Email()
+            };
+
+            Console.WriteLine("{0} {1}", user.Name, user.Email);
 
             Console.ReadLine();
         }
