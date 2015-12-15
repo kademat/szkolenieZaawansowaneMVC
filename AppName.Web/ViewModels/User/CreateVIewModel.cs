@@ -7,6 +7,10 @@ namespace AppName.Web.ViewModels.User
 {
     public class CreateViewModel
     {
+        public CreateViewModel()
+        {
+            Address = new AdressViewModel();
+        }
         public string Name { get; set; }
 
         public AdressViewModel Address { get; set; }

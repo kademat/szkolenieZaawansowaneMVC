@@ -9,7 +9,7 @@ namespace AppName.Web.ViewModels.User
     {
         public AdressViewModel()
         {
-            Adress = new AdressViewModel();
+            
         }
         public string City { get; set; }
 
