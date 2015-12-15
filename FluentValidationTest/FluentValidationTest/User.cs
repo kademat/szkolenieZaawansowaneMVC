@@ -13,7 +13,11 @@ namespace FluentValidationTest
         public string Name { get; set; }
 
         public string Email { get; set; }
-        
+
+        public bool CreateInvoide { get; set; }
+
+        public string Nip { get; set; }
+
 
     }
 }

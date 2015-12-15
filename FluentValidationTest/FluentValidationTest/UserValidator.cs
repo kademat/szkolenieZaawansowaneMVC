@@ -21,8 +21,22 @@ namespace FluentValidationTest
 
             RuleFor(u => u.Email).EmailAddress();
 
+            RuleFor(u => u.Nip).NotEmpty().When(u => u.CreateInvoide);
+
+            RuleFor(u => u.Nip).Must(nip => IsNipValid(nip))
+                .When(u => u.CreateInvoide);
 
 
+        }
+
+        private bool IsNipValid(string nip)
+        {
+            if(nip == null)
+                return false;
+
+            if (nip.Length != 10)
+                return false;
+            return true;
         }
     }
 }

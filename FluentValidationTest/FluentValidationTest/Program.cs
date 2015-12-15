@@ -15,7 +15,8 @@ namespace FluentValidationTest
 
             User user = new User
             {
-                Email = "aaaa"
+                Email = "aaaa",
+                CreateInvoide = true
             };
 
             var validator = new UserValidator();
