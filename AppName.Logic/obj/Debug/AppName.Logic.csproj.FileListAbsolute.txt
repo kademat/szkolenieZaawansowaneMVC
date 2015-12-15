@@ -1,0 +1,7 @@
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\bin\Debug\AppName.Logic.dll
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\bin\Debug\AppName.Logic.pdb
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\bin\Debug\AppName.Domains.dll
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\bin\Debug\AppName.Domains.pdb
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\obj\Debug\AppName.Logic.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\obj\Debug\AppName.Logic.dll
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\obj\Debug\AppName.Logic.pdb

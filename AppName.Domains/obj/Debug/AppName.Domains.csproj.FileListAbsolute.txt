@@ -1,0 +1,5 @@
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Domains\bin\Debug\AppName.Domains.dll
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Domains\bin\Debug\AppName.Domains.pdb
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Domains\obj\Debug\AppName.Domains.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Domains\obj\Debug\AppName.Domains.dll
+C:\Users\Daniel\Documents\Sopot\AppName\AppName.Domains\obj\Debug\AppName.Domains.pdb

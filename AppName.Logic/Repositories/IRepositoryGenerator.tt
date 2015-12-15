@@ -1,0 +1,22 @@
+﻿<#@ include file="IRepositoryTemplate.tt" #>
+<#+
+// <copyright file="IRepositoryGenerator.tt" company="">
+//  Copyright © . All Rights Reserved.
+// </copyright>
+
+public class IRepositoryGenerator : Generator
+{
+	protected override void RunCore()
+	{
+		var template = new IRepositoryTemplate();
+
+		var classes = new string[]{"Product"};
+
+		foreach(var className in classes)
+		{
+			template.ClassName = className;
+			template.RenderToFile("I" + className + "Repository.generated.cs");
+		}
+	}
+}
+#>

@@ -1,0 +1,12 @@
+<#@ template language="C#" debug="True" #>
+<#@ output extension="cs" #>
+<#@ include file="T4Toolbox.tt" #>
+<#@ include file="RepositoryGenerator.tt" #>
+<#
+// <copyright file="RepositoryScript.tt" company="">
+//  Copyright © . All Rights Reserved.
+// </copyright>
+	var generator = new RepositoryGenerator();
+	generator.Run();
+
+#>

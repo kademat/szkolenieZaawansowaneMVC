@@ -1,0 +1,26 @@
+﻿<#+
+// <copyright file="IRepositoryTemplate.tt" company="">
+//  Copyright © . All Rights Reserved.
+// </copyright>
+
+public class IRepositoryTemplate : CSharpTemplate
+{
+	public string ClassName;
+
+	public override string TransformText()
+	{
+		base.TransformText();
+#>
+using AppName.Domains;
+
+namespace <#= DefaultNamespace #>
+{
+	public partial interface I<#= Identifier(ClassName) #>Repository : IRepository<<#= Identifier(ClassName) #>>
+	{
+	}
+}
+<#+
+        return this.GenerationEnvironment.ToString();
+	}
+}
+#>

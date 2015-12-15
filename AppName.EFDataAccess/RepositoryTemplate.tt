@@ -1,0 +1,41 @@
+﻿<#+
+// <copyright file="RepositoryTemplate.tt" company="">
+//  Copyright © . All Rights Reserved.
+// </copyright>
+
+public class RepositoryTemplate : CSharpTemplate
+{
+	public string ClassName;
+
+	public string DbSetName;
+
+	public override string TransformText()
+	{
+		base.TransformText();
+#>
+using AppName.Domains;
+using AppName.Logic.Repositories;
+using System.Data.Entity;
+
+namespace <#= DefaultNamespace #>
+{
+	public partial class <#= Identifier(ClassName) #>Repository
+	: BaseRepository<<#= Identifier(ClassName) #>>, I<#= Identifier(ClassName) #>Repository
+
+	{
+		public <#= Identifier(ClassName) #>Repository(DataContext db) : base(db)
+		{
+		}
+
+		protected override DbSet<<#= Identifier(ClassName) #>> DbSet{
+			get{
+				return _db.<#= PropertyName(DbSetName) #>;
+				}
+		}
+	}
+}
+<#+
+        return this.GenerationEnvironment.ToString();
+	}
+}
+#>
