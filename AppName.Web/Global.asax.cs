@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppName.Web.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,7 +18,9 @@ namespace AppName.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            AutoMapperConfiguration.Configure();
+            AutomapperConfiguration.Configure();
+
+
         }
     }
 }
