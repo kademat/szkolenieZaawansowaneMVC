@@ -15,6 +15,7 @@ namespace AutomapperTest
                 .ConvertUsing<EnumToStringConverter>();
 
             Mapper.CreateMap<Order, OrderDTO>()
+                .Include<MyOrder, MyOrderDTO>()
                 .ForMember(dest => dest.Cost,
                 opt => opt.MapFrom(src => string.Format("{0} zl", src.Cost)))
                 .ForMember(dest => dest.Status,
