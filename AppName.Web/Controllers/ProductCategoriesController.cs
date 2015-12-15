@@ -2,6 +2,7 @@
 using AppName.Logic.Interfaces;
 using AppName.Logic.ProductCategories;
 using AppName.Web.ViewModels.ProductCategories;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,11 +32,7 @@ namespace AppName.Web.Controllers
 
             var viewModel = new IndexViewModel();
 
-            viewModel.Categories = result.Categories.Select(c => new IndexItemViewModel()
-            {
-                Id = c.Id,
-                Name = c.Name
-            });
+            viewModel.Categories = Mapper.Map<IEnumerable<IndexItemViewModel>>(result.Categories);
 
             return View();
         }
