@@ -22,14 +22,14 @@ namespace FluentValidationTest {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class UserResources {
+    public class ValidationDefaultErrorResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal UserResources() {
+        internal ValidationDefaultErrorResources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace FluentValidationTest {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FluentValidationTest.UserResources", typeof(UserResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FluentValidationTest.ValidationDefaultErrorResources", typeof(ValidationDefaultErrorResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,11 @@ namespace FluentValidationTest {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nazwa.
+        ///   Looks up a localized string similar to {PropertyName} - wartość wymagana.
         /// </summary>
-        public static string Name {
+        public static string notempty_error {
             get {
-                return ResourceManager.GetString("Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Nazwa jest wymagana.
-        /// </summary>
-        public static string NameRequiredError {
-            get {
-                return ResourceManager.GetString("NameRequiredError", resourceCulture);
+                return ResourceManager.GetString("notempty_error", resourceCulture);
             }
         }
     }

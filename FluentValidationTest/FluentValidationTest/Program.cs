@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,12 @@ namespace FluentValidationTest
     {
         static void Main(string[] args)
         {
-            User user = new User();
+            Initialize();
+
+            User user = new User
+            {
+                Email = "aaaa"
+            };
 
             var validator = new UserValidator();
 
@@ -23,6 +29,11 @@ namespace FluentValidationTest
                     Console.WriteLine("{0} : {1}", item.PropertyName, item.ErrorMessage);
                 }
             }
+        }
+
+        private static void Initialize()
+        {
+            ValidatorOptions.ResourceProviderType = typeof(ValidationDefaultErrorResources);
         }
     }
 }

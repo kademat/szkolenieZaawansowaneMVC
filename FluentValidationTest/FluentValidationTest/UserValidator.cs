@@ -13,9 +13,13 @@ namespace FluentValidationTest
         {
             RuleFor(u => u.Name)
                 .NotEmpty()
-                .WithLocalizedMessage(() => UserResources.NameRequiredError);
-                //.WithMessage("Nazwa jest wymagana");
+                .WithLocalizedMessage(() => UserResources.NameRequiredError)
+                .WithName("Nazwy");
+            //.WithMessage("Nazwa jest wymagana");
 
+            RuleFor(u => u.Email).NotEmpty();
+
+            RuleFor(u => u.Email).EmailAddress();
 
 
 
