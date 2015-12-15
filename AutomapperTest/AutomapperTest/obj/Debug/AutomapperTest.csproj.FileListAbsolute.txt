@@ -15,3 +15,4 @@ C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\bin\Debug\AutoM
 C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\bin\Debug\AutoMapper.xml
 C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.OrderStatusResources.resources
 C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.csproj.GenerateResource.Cache
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.csprojResolveAssemblyReference.cache

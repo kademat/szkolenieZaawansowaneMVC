@@ -21,9 +21,6 @@ namespace AutomapperTest
                 .ForMember(dest => dest.Status,
                     opt => opt.ResolveUsing<EnumToStringResolver>()
                     .FromMember(src => src.Status))
-                //.ForMember(dest => dest.Status,
-                //    opt => opt.MapFrom(src =>
-                //      src.Status.ToDisplayString()))
                 .IgnoreAllNonExisting();
 
 

@@ -22,7 +22,7 @@ namespace AutomapperTest {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class OrderStatusResources {
+    public class OrderStatusResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace AutomapperTest {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AutomapperTest.OrderStatusResources", typeof(OrderStatusResources).Assembly);
@@ -51,7 +51,7 @@ namespace AutomapperTest {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace AutomapperTest {
         /// <summary>
         ///   Looks up a localized string similar to Utworzony.
         /// </summary>
-        internal static string Created {
+        public static string Created {
             get {
                 return ResourceManager.GetString("Created", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace AutomapperTest {
         /// <summary>
         ///   Looks up a localized string similar to Przetwarzany.
         /// </summary>
-        internal static string Processed {
+        public static string Processed {
             get {
                 return ResourceManager.GetString("Processed", resourceCulture);
             }

@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoMapper
+namespace AutomapperTest
 {
     public static class EnumExtensions
     {
