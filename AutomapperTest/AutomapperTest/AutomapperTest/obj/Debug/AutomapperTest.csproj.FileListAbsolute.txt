@@ -1,0 +1,8 @@
+c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\bin\Debug\AutomapperTest.exe.config
+c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\bin\Debug\AutomapperTest.exe
+c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\bin\Debug\AutomapperTest.pdb
+c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\bin\Debug\AutoMapper.dll
+c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\bin\Debug\AutoMapper.xml
+c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.csprojResolveAssemblyReference.cache
+c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.exe
+c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.pdb

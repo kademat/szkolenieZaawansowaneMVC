@@ -14,7 +14,7 @@ namespace AutomapperTest
 
         public string Cost { get; set; }
 
-        public string Cost2 { get; set; }
+        //public string Cost2 { get; set; }
 
         public string Status { get; set; }
     }

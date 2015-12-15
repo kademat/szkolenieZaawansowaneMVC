@@ -6,3 +6,12 @@ c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\Automapp
 c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.csprojResolveAssemblyReference.cache
 c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.exe
 c:\users\szkolenie\documents\visual studio 2015\Projects\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.pdb
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\bin\Debug\AutomapperTest.exe.config
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.exe
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.pdb
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\bin\Debug\AutomapperTest.exe
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\bin\Debug\AutomapperTest.pdb
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\bin\Debug\AutoMapper.dll
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\bin\Debug\AutoMapper.xml
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.OrderStatusResources.resources
+C:\Users\szkolenie\Desktop\AppName\AutomapperTest\AutomapperTest\obj\Debug\AutomapperTest.csproj.GenerateResource.Cache
