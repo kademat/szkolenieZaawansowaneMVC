@@ -5,3 +5,10 @@ C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\bin\Debug\AppName.Domains.
 C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\obj\Debug\AppName.Logic.csprojResolveAssemblyReference.cache
 C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\obj\Debug\AppName.Logic.dll
 C:\Users\Daniel\Documents\Sopot\AppName\AppName.Logic\obj\Debug\AppName.Logic.pdb
+C:\Users\szkolenie\Desktop\AppName\AppName.Logic\bin\Debug\AppName.Logic.dll
+C:\Users\szkolenie\Desktop\AppName\AppName.Logic\bin\Debug\AppName.Logic.pdb
+C:\Users\szkolenie\Desktop\AppName\AppName.Logic\bin\Debug\AppName.Domains.dll
+C:\Users\szkolenie\Desktop\AppName\AppName.Logic\bin\Debug\AppName.Domains.pdb
+C:\Users\szkolenie\Desktop\AppName\AppName.Logic\obj\Debug\AppName.Logic.csprojResolveAssemblyReference.cache
+C:\Users\szkolenie\Desktop\AppName\AppName.Logic\obj\Debug\AppName.Logic.dll
+C:\Users\szkolenie\Desktop\AppName\AppName.Logic\obj\Debug\AppName.Logic.pdb
