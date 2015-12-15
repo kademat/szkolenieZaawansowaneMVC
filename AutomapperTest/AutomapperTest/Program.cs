@@ -18,8 +18,8 @@ namespace AutomapperTest
                     opt => opt.MapFrom(src =>
 
 
-                      src.Status.ToDisplayString()));
-                //.IgnoreAllNonExisting();
+                      src.Status.ToDisplayString()))
+                .IgnoreAllNonExisting();
 
             Mapper.AssertConfigurationIsValid();
 
@@ -28,11 +28,21 @@ namespace AutomapperTest
                 Id = 10,
                 Cost = 15.3M,
                 Number = "Jakiś tam numer",
-                Status = OrderStatus.Created
+                Status = OrderStatus.Processed
             };
 
             var orderDTO = Mapper.Map<OrderDTO>(order);
 
+        }
+    }
+
+    public class EnumToStringConverter : ITypeConverter<Enum, string>
+    {
+        public string Convert(ResolutionContext context)
+        {
+            var value = (Enum)context.SourceValue;
+
+            return value.ToDisplayString();
         }
     }
 }
