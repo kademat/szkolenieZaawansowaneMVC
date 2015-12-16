@@ -17,7 +17,12 @@ namespace FluentValidationTest
             {
                 Name = "Darek",
                 Email = "aaaa",
-                CreateInvoide = true
+                CreateInvoide = true,
+                Orders = new List<Order>()
+                {
+                    new Order { Product = "Test" },
+                    new Order { Value = 10 }
+                }
             };
             
 

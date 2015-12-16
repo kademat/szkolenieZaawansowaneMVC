@@ -40,6 +40,8 @@ namespace FluentValidationTest
                 .WithMessage("Użytkownik już istnieje");
 
             RuleFor(u => u.Address).SetValidator(new AddressValidator());
+
+            RuleFor(u => u.Orders).SetCollectionValidator(new OrderValidator());
         }
 
         private bool IsNipValid(string nip)

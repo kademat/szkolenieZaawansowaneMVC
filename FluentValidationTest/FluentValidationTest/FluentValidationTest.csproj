@@ -53,6 +53,8 @@
     <Compile Include="IRuleBuilderOptionsExtensions.cs" />
     <Compile Include="IUserLogic.cs" />
     <Compile Include="NipValidator.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderValidator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />

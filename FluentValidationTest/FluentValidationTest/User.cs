@@ -26,7 +26,7 @@ namespace FluentValidationTest
 
         public Address Address { get; set; }
 
-
+        public List<Order> Orders { get; set; }
 
     }
 }
