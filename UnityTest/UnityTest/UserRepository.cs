@@ -19,7 +19,9 @@ namespace UnityTest
 
         public void Test()
         {
-            Console.WriteLine("UserRepository.Test");
+            Console.WriteLine("UserRepository.Test, {0}", UserName);
         }
+
+        public string UserName { get; set; }
     }
 }

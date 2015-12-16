@@ -8,11 +8,20 @@ namespace UnityTest
 {
     class UserLogic : IUserLogic
     {
-        private IUserRepository _userRepository;
+        private Lazy<IUserRepository> _lazyUserRepository;
 
-        public UserLogic(IUserRepository userRepository)
+
+        private IUserRepository _userRepository
         {
-            _userRepository = userRepository;
+            get
+            {
+                return _lazyUserRepository.Value;
+            }
+        }
+
+        public UserLogic(Lazy<IUserRepository> userRepository)
+        {
+            _lazyUserRepository = userRepository;
 
             Console.WriteLine("UserLogic.Ctor");
         }
