@@ -1,4 +1,5 @@
-﻿using AppName.Logic.ProductCategories.Results;
+﻿using AppName.Domains;
+using AppName.Logic.ProductCategories.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace AppName.Logic.Interfaces
     {
         ProductCategoriesResult GetAllActive();
 
+        ProductCategoryResult Create(ProductCategory category);
     }
 }
