@@ -33,7 +33,9 @@ namespace UnityTest
 
         private static void InitializeContainer()
         {
-            _container.RegisterType<IUserRepository, UserRepository>(new ContainerControlledLifetimeManager());
+            //_container.RegisterType<IUserRepository, UserRepository>(new ContainerControlledLifetimeManager());
+            //odpalanie przed użyciem!
+            _container.RegisterInstance<IUserRepository>(_container.Resolve<UserRepository>());
 
             _container.RegisterType<IUserLogic, UserLogic>();
         }
