@@ -13,5 +13,7 @@ namespace AppName.Logic.Interfaces
         ProductCategoriesResult GetAllActive();
 
         ProductCategoryResult Create(ProductCategory category);
+
+        ProductCategoriesResult GetById(int id);
     }
 }

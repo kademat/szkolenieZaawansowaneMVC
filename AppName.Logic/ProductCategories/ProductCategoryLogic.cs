@@ -55,5 +55,17 @@ namespace AppName.Logic.ProductCategories
 
             return CreateSuccesResult<ProductCategoriesResult>(r => r.Categories = query);
         }
+
+        public ProductCategoryResult GetById(int id)
+        {
+            var category = _productCategoryRepository.GetById(id);
+
+            if (category == null)
+            {
+                return CreateFailureResult<ProductCategoryResult>(string.Empty, "Kategoria nie istnieje");
+            }
+
+            return CreateSuccesResult<ProductCategoryResult>(r => r.Category = category);
+        }
     }
 }

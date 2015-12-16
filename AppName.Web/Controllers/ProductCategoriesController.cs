@@ -64,5 +64,17 @@ namespace AppName.Web.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public ActionResult Edit(int id)
+        {
+            var result = ProductCategoryLogic.GetById(id);
+
+            if (result.Success)
+            {
+                return Content("blad");
+            }
+
+            return View();
+        }
     }
 }
