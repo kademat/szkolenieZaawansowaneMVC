@@ -67,5 +67,26 @@ namespace AppName.Logic.ProductCategories
 
             return CreateSuccesResult<ProductCategoryResult>(r => r.Category = category);
         }
+
+        public ProductCategoryResult Save(ProductCategory category)
+        {
+            if (category == null)
+            {
+                throw new ArgumentNullException("save");
+            }
+
+            var validator = new ProductCategoryValidator();
+
+            var validatorResult = validator.Validate(category);
+
+            if (validatorResult.IsValid == false)
+            {
+                return CreateFailureResult<ProductCategoryResult>(validatorResult.Errors);
+            }
+            
+            _productCategoryRepository.SaveChanges();
+
+            return CreateSuccesResult<ProductCategoryResult>(r => r.Category = category);
+        }
     }
 }

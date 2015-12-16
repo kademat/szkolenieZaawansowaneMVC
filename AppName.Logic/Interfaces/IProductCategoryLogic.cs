@@ -14,6 +14,8 @@ namespace AppName.Logic.Interfaces
 
         ProductCategoryResult Create(ProductCategory category);
 
-        ProductCategoriesResult GetById(int id);
+        ProductCategoryResult GetById(int id);
+
+        ProductCategoryResult Save(ProductCategory category);
     }
 }

@@ -74,7 +74,39 @@ namespace AppName.Web.Controllers
                 return Content("blad");
             }
 
-            return View();
+            var viewModel = Mapper.Map<EditViewModel>(result.Category);
+
+
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(EditViewModel viewModel)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View(viewModel);
+            }
+
+            var getResult = ProductCategoryLogic.GetById(viewModel.Id);
+
+            if (getResult.Success == false)
+            {
+                return Content("Blad");
+            }
+
+            var category = Mapper.Map(viewModel, getResult.Category);
+
+            var saveResult = ProductCategoryLogic.Save(category);
+
+            if (saveResult.Success == false)
+            {
+                AddErrors(saveResult.Errors);
+                return View(viewModel);
+            }
+
+            return RedirectToAction("Index");
         }
     }
 }

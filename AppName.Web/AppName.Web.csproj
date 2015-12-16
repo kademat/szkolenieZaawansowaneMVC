@@ -217,6 +217,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ProductCategories\CreateViewModel.cs" />
+    <Compile Include="ViewModels\ProductCategories\EditViewModel.cs" />
     <Compile Include="ViewModels\ProductCategories\IndexViewModel.cs" />
     <Compile Include="ViewModels\User\AdressViewModel.cs" />
     <Compile Include="ViewModels\User\CreateViewModel.cs" />
@@ -350,6 +351,7 @@
     <Content Include="Views\ProductCategories\Create.cshtml" />
     <Content Include="Views\ProductCategories\Index.cshtml" />
     <Content Include="Views\ProductCategories\IndexItems.cshtml" />
+    <Content Include="Views\ProductCategories\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

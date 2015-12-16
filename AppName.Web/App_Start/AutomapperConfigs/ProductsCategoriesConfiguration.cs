@@ -15,6 +15,10 @@ namespace AppName.Web.App_Start.AutomapperConfigs
             Mapper.CreateMap<ProductCategory, IndexItemViewModel>();
 
             Mapper.CreateMap<CreateViewModel, ProductCategory>().IgnoreAllNonExisting();
+
+            Mapper.CreateMap<ProductCategory, EditViewModel>();
+
+            Mapper.CreateMap<EditViewModel, ProductCategory>().IgnoreAllNonExisting();
         }
     }
 }
