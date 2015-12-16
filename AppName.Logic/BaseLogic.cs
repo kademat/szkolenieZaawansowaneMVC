@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation.Results;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,6 +36,21 @@ namespace AppName.Logic
             {
                 action(result);
             }
+
+            return result;
+        }
+
+        protected T CreateFailureResult<T>(IEnumerable<ValidationFailure> errors) where T : BaseResult
+        {
+            var result = Activator.CreateInstance<T>();
+
+            result.Success = false;
+
+            result.Errors = errors.Select(e => new ErrorMessage()
+            {
+                PropertyName = e.PropertyName,
+                Error = e.ErrorMessage
+            });
 
             return result;
         }

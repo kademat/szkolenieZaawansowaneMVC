@@ -36,7 +36,7 @@ namespace AppName.Logic.ProductCategories
 
             if (validatorResult.IsValid == false)
             {
-
+                return CreateFailureResult<ProductCategoryResult>(validatorResult.Errors);
             }
 
             _productCategoryRepository.Add(category);
