@@ -59,7 +59,7 @@ internal partial class T4MVC_System_Web_Mvc_ActionResult : System.Web.Mvc.Action
         this.InitMVCT4Result(area, controller, action, protocol);
     }
      
-    public override void ExecuteResult(System.Web.Mvc.ControllerContext ) { }
+    public override void ExecuteResult(System.Web.Mvc.ControllerContext context) { }
     
     public string Controller { get; set; }
     public string Action { get; set; }
