@@ -348,6 +348,8 @@
     <Content Include="Views\Users\EditorTemplates\AdressViewModel.cshtml" />
     <Content Include="Views\Users\Create2.cshtml" />
     <Content Include="Views\ProductCategories\Create.cshtml" />
+    <Content Include="Views\ProductCategories\Index.cshtml" />
+    <Content Include="Views\ProductCategories\IndexItems.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

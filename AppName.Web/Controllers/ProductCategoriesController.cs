@@ -36,7 +36,7 @@ namespace AppName.Web.Controllers
 
             viewModel.Categories = Mapper.Map<IEnumerable<IndexItemViewModel>>(result.Categories);
 
-            return View();
+            return View(viewModel);
         }
 
         public ActionResult Create()
