@@ -216,6 +216,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ProductCategories\CreateViewModel.cs" />
     <Compile Include="ViewModels\ProductCategories\IndexViewModel.cs" />
     <Compile Include="ViewModels\User\AdressViewModel.cs" />
     <Compile Include="ViewModels\User\CreateViewModel.cs" />
@@ -346,11 +347,11 @@
     <Content Include="Views\Users\Create.cshtml" />
     <Content Include="Views\Users\EditorTemplates\AdressViewModel.cshtml" />
     <Content Include="Views\Users\Create2.cshtml" />
+    <Content Include="Views\ProductCategories\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
-    <Folder Include="Views\ProductCategories\" />
     <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>

@@ -13,6 +13,8 @@ namespace AppName.Web.App_Start.AutomapperConfigs
         public static void Configure()
         {
             Mapper.CreateMap<ProductCategory, IndexItemViewModel>();
+
+            Mapper.CreateMap<CreateViewModel, ProductCategory>().ForMember(dest => dest.Products, opt => opt.Ignore());
         }
     }
 }
