@@ -8,6 +8,12 @@ namespace UnityTest
 {
     class UserRepository : IUserRepository
     {
+        public UserRepository()
+        {
+            Console.WriteLine("UserRepository.Ctor");
+        }
+
+
         public void Test()
         {
             Console.WriteLine("UserRepository.Test");
