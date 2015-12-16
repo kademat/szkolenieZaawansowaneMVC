@@ -30,8 +30,8 @@ namespace FluentValidationTest
                 RuleFor(u => u.Nip)
                     .Cascade(CascadeMode.StopOnFirstFailure)
                     .NotEmpty()
-                    .Must(nip => IsNipValid(nip));
-                
+                    //.Must(nip => IsNipValid(nip));
+                    .Nip();
 
             });
         }
