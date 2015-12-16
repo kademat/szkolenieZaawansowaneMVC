@@ -9,6 +9,12 @@ namespace FluentValidationTest
 {
     class User
     {
+        public User()
+        {
+            Address = new Address();
+        }
+
+
         [Display(ResourceType = typeof(UserResources), Name = "Name")]
         public string Name { get; set; }
 
@@ -17,6 +23,9 @@ namespace FluentValidationTest
         public bool CreateInvoide { get; set; }
 
         public string Nip { get; set; }
+
+        public Address Address { get; set; }
+
 
 
     }
