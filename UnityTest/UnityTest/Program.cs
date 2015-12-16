@@ -24,18 +24,18 @@ namespace UnityTest
         {
             var userLogic = _container.Resolve<IUserLogic>();
 
-            userLogic.Test();
+            userLogic.Test2();
             //nowa instancja!
-            _container.Resolve<IUserLogic>().Test();
+            _container.Resolve<IUserLogic>().Test2();
 
-            _container.Resolve<IUserLogic>().Test();
+            _container.Resolve<IUserLogic>().Test2();
         }
 
         private static void InitializeContainer()
         {
+            _container.RegisterType<IUserRepository, UserRepository>();
             //_container.RegisterType<IUserRepository, UserRepository>(new ContainerControlledLifetimeManager());
-            //odpalanie przed użyciem!
-            _container.RegisterInstance<IUserRepository>(_container.Resolve<UserRepository>());
+            //_container.RegisterInstance<IUserRepository>(_container.Resolve<UserRepository>());
 
             _container.RegisterType<IUserLogic, UserLogic>();
         }

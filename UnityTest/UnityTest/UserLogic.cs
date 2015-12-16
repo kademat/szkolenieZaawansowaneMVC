@@ -22,5 +22,10 @@ namespace UnityTest
             _userRepository.Test();
             Console.WriteLine("UserLogic.Test");
         }
+
+        public void Test2()
+        {
+            Console.WriteLine("UserLogic.Test2");
+        }
     }
 }

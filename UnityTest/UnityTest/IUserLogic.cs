@@ -9,5 +9,7 @@ namespace UnityTest
     interface IUserLogic
     {
         void Test();
+
+        void Test2();
     }
 }
