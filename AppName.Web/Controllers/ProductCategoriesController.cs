@@ -14,7 +14,7 @@ using System.Web.Mvc;
 
 namespace AppName.Web.Controllers
 {
-    public class ProductCategoriesController : BaseController
+    public partial class ProductCategoriesController : BaseController
     {
         [Dependency]
         public Lazy<IProductCategoryLogic> LazyProductCategoryLogic { get; set; }
@@ -28,7 +28,7 @@ namespace AppName.Web.Controllers
             }
         }
         // GET: ProductCategories
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
             var result = ProductCategoryLogic.GetAllActive();
 
@@ -44,13 +44,13 @@ namespace AppName.Web.Controllers
             return View(viewModel);
         }
 
-        public ActionResult Create()
+        public virtual ActionResult Create()
         {
             return View(new CreateViewModel());
         }
 
         [HttpPost]
-        public ActionResult Create(CreateViewModel viewModel)
+        public virtual ActionResult Create(CreateViewModel viewModel)
         {
             if (ModelState.IsValid == false)
             {
@@ -70,7 +70,7 @@ namespace AppName.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Edit(int id)
+        public virtual ActionResult Edit(int id)
         {
             var result = ProductCategoryLogic.GetById(id);
 
@@ -87,7 +87,7 @@ namespace AppName.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit(EditViewModel viewModel)
+        public virtual ActionResult Edit(EditViewModel viewModel)
         {
             if (ModelState.IsValid == false)
             {
