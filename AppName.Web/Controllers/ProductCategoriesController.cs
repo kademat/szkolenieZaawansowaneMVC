@@ -69,7 +69,7 @@ namespace AppName.Web.Controllers
         {
             var result = ProductCategoryLogic.GetById(id);
 
-            if (result.Success)
+            if (result.Success == false)
             {
                 return Content("blad");
             }
@@ -93,7 +93,7 @@ namespace AppName.Web.Controllers
 
             if (getResult.Success == false)
             {
-                return Content("Blad");
+                return Content("Blad getResult.Success");
             }
 
             var category = Mapper.Map(viewModel, getResult.Category);
