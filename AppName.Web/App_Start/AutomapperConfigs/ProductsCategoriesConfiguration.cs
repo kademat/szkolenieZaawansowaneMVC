@@ -14,7 +14,7 @@ namespace AppName.Web.App_Start.AutomapperConfigs
         {
             Mapper.CreateMap<ProductCategory, IndexItemViewModel>();
 
-            Mapper.CreateMap<CreateViewModel, ProductCategory>().ForMember(dest => dest.Products, opt => opt.Ignore());
+            Mapper.CreateMap<CreateViewModel, ProductCategory>().IgnoreAllNonExisting();
         }
     }
 }
