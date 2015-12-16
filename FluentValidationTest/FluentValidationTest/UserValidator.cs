@@ -9,7 +9,7 @@ namespace FluentValidationTest
 {
     class UserValidator : AbstractValidator<User>
     {
-        public UserValidator()
+        public UserValidator(IUserLogic userLogic)
         {
             RuleFor(u => u.Name)
                 .NotEmpty()
@@ -34,6 +34,10 @@ namespace FluentValidationTest
                     .Nip();
 
             });
+
+            RuleFor(u => u.Name)
+                .Must(name => userLogic.Exist(name) == false)
+                .WithMessage("Użytkownik już istnieje");
         }
 
         private bool IsNipValid(string nip)

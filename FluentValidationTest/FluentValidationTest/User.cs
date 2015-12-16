@@ -9,7 +9,7 @@ namespace FluentValidationTest
 {
     class User
     {
-        [Display(ResourceType = typeof(UserResources), Name = "Nazwa")]
+        [Display(ResourceType = typeof(UserResources), Name = "Name")]
         public string Name { get; set; }
 
         public string Email { get; set; }

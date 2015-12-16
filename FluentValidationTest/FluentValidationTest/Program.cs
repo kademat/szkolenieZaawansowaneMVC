@@ -15,11 +15,13 @@ namespace FluentValidationTest
 
             User user = new User
             {
+                Name = "Darek",
                 Email = "aaaa",
                 CreateInvoide = true
             };
+            
 
-            var validator = new UserValidator();
+            var validator = new UserValidator(new UserLogic());
 
             var validationResult = validator.Validate(user);
 
