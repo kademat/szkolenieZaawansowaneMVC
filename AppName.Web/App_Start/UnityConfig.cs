@@ -3,6 +3,9 @@ using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using AppName.EFDataAccess;
 using System.Web;
+using AppName.Logic.Repositories;
+using AppName.Logic.Interfaces;
+using AppName.Web.Controllers;
 
 namespace AppName.Web.App_Start
 {
@@ -40,7 +43,8 @@ namespace AppName.Web.App_Start
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
 
-            container.RegisterType<DataContext>(new PerRequestLifetimeManager(), new InjectionFactory(c => {
+            container.RegisterType<DataContext>(new PerRequestLifetimeManager(), new InjectionFactory(c =>
+            {
                 var dataContext = new DataContext();
 
                 dataContext.UserName = HttpContext.Current.User.Identity.Name;
@@ -49,7 +53,13 @@ namespace AppName.Web.App_Start
                 dataContext.Now = DateTime.Now;
 
                 return dataContext;
-            }))
+            }));
+
+            container.RegisterType<IProductCategoryRepository, ProductCategoryRepository>(new PerRequestLifetimeManager());
+
+            container.RegisterType<IProductCategoryLogic, IProductCategoryLogic>(new PerRequestLifetimeManager());
+
+            container.RegisterType<AccountController>(new InjectionConstructor());
         }
     }
 }

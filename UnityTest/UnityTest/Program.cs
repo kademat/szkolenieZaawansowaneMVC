@@ -54,6 +54,8 @@ namespace UnityTest
                     return repository;
                 }));
 
+
+
             _container.RegisterType<IUserLogic, UserLogic>();
 
             _container.RegisterType<IGeneralSettingView, GeneralSettingView>();

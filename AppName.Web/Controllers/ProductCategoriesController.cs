@@ -5,6 +5,7 @@ using AppName.Logic.ProductCategories;
 using AppName.Web.Infrastructure;
 using AppName.Web.ViewModels.ProductCategories;
 using AutoMapper;
+using Microsoft.Practices.Unity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,15 @@ namespace AppName.Web.Controllers
 {
     public class ProductCategoriesController : BaseController
     {
+        [Dependency]
+        public Lazy<IProductCategoryLogic> LazyProductCategoryLogic { get; set; }
+
         public IProductCategoryLogic ProductCategoryLogic
         {
             get
             {
-                return new ProductCategoryLogic(new ProductCategoryRepository(new DataContext()));
+                return LazyProductCategoryLogic.Value;
+                //return new ProductCategoryLogic(new ProductCategoryRepository(new DataContext()));
             }
         }
         // GET: ProductCategories
