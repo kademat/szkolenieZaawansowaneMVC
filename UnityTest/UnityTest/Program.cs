@@ -17,7 +17,15 @@ namespace UnityTest
 
             Console.WriteLine("Po konfiguracji kontenera");
 
-            UserTests();
+            //UserTests();
+            SettingsTest();
+        }
+
+        private static void SettingsTest()
+        {
+            var window = _container.Resolve<SettingsWIndow>();
+
+            window.Show();
         }
 
         private static void UserTests()
@@ -47,6 +55,16 @@ namespace UnityTest
                 }));
 
             _container.RegisterType<IUserLogic, UserLogic>();
+
+            _container.RegisterType<IGeneralSettingView, GeneralSettingView>();
+            //unikalne
+            _container.RegisterType<ISettingView, GeneralSettingView>(typeof(GeneralSettingView).FullName);
+            
+            _container.RegisterType<IPasswordSetting, PasswordSettingView>();
+
+            _container.RegisterType<ISettingView, PasswordSettingView>(typeof(PasswordSettingView).FullName);
+
+            _container.RegisterType<IEnumerable<ISettingView>, ISettingView[]>();
         }
     }
 }
