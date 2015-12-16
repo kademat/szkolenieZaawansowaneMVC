@@ -193,3 +193,5 @@ C:\Users\szkolenie\Desktop\AppName\AppName.Web\bin\pt\FluentValidation.resources
 C:\Users\szkolenie\Desktop\AppName\AppName.Web\bin\ru\FluentValidation.resources.dll
 C:\Users\szkolenie\Desktop\AppName\AppName.Web\bin\sv\FluentValidation.resources.dll
 C:\Users\szkolenie\Desktop\AppName\AppName.Web\bin\tr\FluentValidation.resources.dll
+C:\Users\szkolenie\Desktop\AppName\AppName.Web\bin\Tools.dll
+C:\Users\szkolenie\Desktop\AppName\AppName.Web\bin\Tools.pdb

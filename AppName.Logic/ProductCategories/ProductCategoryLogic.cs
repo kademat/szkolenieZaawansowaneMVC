@@ -21,6 +21,8 @@ namespace AppName.Logic.ProductCategories
             {
                 throw new ArgumentNullException("productCategoryRepository");
             }
+
+            _productCategoryRepository = productCategoryRepository;
         }
 
         public ProductCategoryResult Create(ProductCategory category)

@@ -375,6 +375,10 @@
       <Project>{b10b9caf-b4d7-4422-8ebc-ff8292ca8dc6}</Project>
       <Name>AppName.Logic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{f809e6db-e625-43c8-a132-fe7598877366}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
